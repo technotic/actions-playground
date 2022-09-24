@@ -21,7 +21,7 @@ The end goal is to generate something like the following based on:
   [sonar](http://www.somewhere.com),
   [test reports](http://www.somewhere.com),
   [CR](http://www.somewhere.com),
-  [artfact](http://www.somewhere.com)
+  [artifact](http://www.somewhere.com)
 
 since 5.8.0
 
@@ -50,7 +50,7 @@ Deployed
 [sonar](http://www.somewhere.com),
 [test reports](http://www.somewhere.com),
 [CR](http://www.somewhere.com),
-[artfact](http://www.somewhere.com)
+[artifact](http://www.somewhere.com)
 
 since 5.8.0
 
