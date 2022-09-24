@@ -1,7 +1,12 @@
 # actions-playground
 A playground for github actions
 
-The end goal is to generate something like:
+The end goal is to generate something like the following based on:
+* Github commit history and tags
+* Rally
+* Jenkins
+
+---
 
 # application-name
 
