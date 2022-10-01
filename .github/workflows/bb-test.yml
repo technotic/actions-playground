@@ -25,6 +25,7 @@ jobs:
       - name: Simple test
         run: |
           pwd
+          ls -l
           find .
           find ..
           find ../..
