@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - name: Find the release just created
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
           echo action ${{ github.event.action }}
           echo release_id ${{ github.event.release.release_id }}
@@ -32,5 +34,6 @@ jobs:
           echo "----"
           echo type ${{ github.event.type }}
           echo "----"
-          echo type ${{ github.event.release.type }}
+          echo tag: ${{ github.event.release.tag_name }}
+          echo context: "$GITHUB_CONTEXT"
 
