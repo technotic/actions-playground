@@ -19,7 +19,8 @@ jobs:
       - name: Install clojure tools
         uses: DeLaGuardo/setup-clojure@9.5
         with:
-          bb: 0.8.2                    # Babashka
+          bb: v0.8.156
+#           bb: 0.8.2                    # Babashka
           
       - name: Simple test
         run: bb '(+ 1 1)'
