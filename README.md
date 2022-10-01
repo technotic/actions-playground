@@ -1,5 +1,7 @@
 # actions-playground
-A playground for github actions
+A playground for github actions.
+
+Generated docs are [here](https://technotic.github.io/actions-playground/)
 
 The end goal is to generate something like the following based on:
 * Github commit history and tags
