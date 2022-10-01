@@ -1,0 +1,14 @@
+name: Regenerate
+
+on:
+  release:
+    types: [published]
+    
+jobs:
+  generate-release-docs:
+    name: Regenerate the release docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Find the release just created
+        run: echo Regenerating release docs for TBD
