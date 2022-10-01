@@ -8,15 +8,15 @@ on:
     
 jobs:
 
-  generate-release-docs:
-    name: Generate the release docs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Find the release just created
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: |
-          echo Generate release docs for ${{ github.event.release.tag_name }}
+#   generate-release-docs:
+#     name: Generate the release docs
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Find the release just created
+#         env:
+#           GITHUB_CONTEXT: ${{ toJson(github) }}
+#         run: |
+#           echo Generate release docs for ${{ github.event.release.tag_name }}
 
   logLatestRelease:
       runs-on: ubuntu-latest
