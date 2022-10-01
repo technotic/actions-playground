@@ -14,5 +14,8 @@ jobs:
     steps:
       - name: Find the release just created
         run: |
-          echo Regenerating release docs for ${{ github.event.release.action }}
-          echo action ${{ github.event.action }}
+          echo Regenerating release docs for ${{ github.event.tag }}
+          echo release_id ${{ github.event.release_id }}
+          echo name ${{ github.event.name }}
+          echo author ${{ github.event.author }}
+          echo isLatest ${{ github.event.isLatest }}
