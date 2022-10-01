@@ -412,3 +412,7 @@ table {
   padding: 0;
   border-collapse:collapse;
 }
+
+li {
+  margin: 3px;
+}
