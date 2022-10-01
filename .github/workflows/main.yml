@@ -1,4 +1,4 @@
-name: Regenerate release docs
+name: Generate release docs
 
 on:
   release:
@@ -8,7 +8,7 @@ on:
     
 jobs:
   generate-release-docs:
-    name: Regenerate the release docs
+    name: Generate the release docs
     runs-on: ubuntu-latest
 
     steps:
@@ -16,24 +16,5 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          echo action ${{ github.event.action }}
-          echo release_id ${{ github.event.release.release_id }}
-          echo tag ${{ github.event.release.tag }}
-          echo name ${{ github.event.release.name }}
-          echo author ${{ github.event.release.author }}
-          echo author.name ${{ github.event.release.author.name }}
-          echo author.login ${{ github.event.release.author.login }}
-          echo payload ${{ github.event.release.payload }}
-          echo payload ${{ github.event.release.payload }}
-          echo payload ${{ github.event.release.payload.tag }}
-          echo payload ${{ github.event.release.payload.release_id }}
-          echo payload ${{ github.event.payload }}
-          echo payload ${{ github.event.payload }}
-          echo payload ${{ github.event.payload.tag }}
-          echo payload ${{ github.event.payload.release_id }}
-          echo "----"
-          echo type ${{ github.event.type }}
-          echo "----"
-          echo tag: ${{ github.event.release.tag_name }}
-          echo context: "$GITHUB_CONTEXT"
+          echo Generate release docs for ${{ github.event.release.tag_name }}
 
