@@ -25,8 +25,23 @@ jobs:
         with:
           bb: latest
 
+      - name: Cache clojure dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gitlibs
+            ~/.deps.clj
+          # List all files containing dependencies:
+          key: cljdeps-${{ hashFiles('deps.edn') }}
+          # key: cljdeps-${{ hashFiles('deps.edn', 'bb.edn') }}
+          # key: cljdeps-${{ hashFiles('project.clj') }}
+          # key: cljdeps-${{ hashFiles('build.boot') }}
+          restore-keys: cljdeps-
+
       - name: Simple test
         run: |
-          pwd
-          ls -l
           bb -f ./bb/tester.clj
+          # TODO
+          # generate release json
+          # regenerate all pages
