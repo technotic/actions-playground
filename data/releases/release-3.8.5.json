@@ -1,0 +1,26 @@
+[
+  {
+    "tag": "3.8.5",
+    "build": {
+      "date": "2002-01-01 10:00",
+      "id": 105
+    },
+    "features": [
+      {
+        "id": "F1001001",
+        "name": "This is a lovely feature",
+        "owner": "Someone",
+        "stories": [
+          {
+            "id": "US1001001",
+            "name": "A lovely story",
+            "who": [
+              "User1",
+              "User2"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
