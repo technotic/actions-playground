@@ -30,6 +30,6 @@ jobs:
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         - run: |
-            echo "Doing it here"
+            echo "Doing it here: ${{ owner }} / ${{ repo }}"
             echo latest release: ${{ steps.get_latest_release.outputs.data }}
 
