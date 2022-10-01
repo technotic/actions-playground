@@ -23,4 +23,4 @@ jobs:
 #           bb: 0.8.2                    # Babashka
           
       - name: Simple test
-        run: bb '(+ 1 1)'
+        run: bb -f bb/tester.clj
