@@ -13,4 +13,6 @@ jobs:
 
     steps:
       - name: Find the release just created
-        run: echo Regenerating release docs for ${{ github.event.release.action }}
+        run: |
+          echo Regenerating release docs for ${{ github.event.release.action }}
+          echo action ${{ github.event.action }}
