@@ -3,11 +3,11 @@ A playground for github actions
 
 The end goal is to generate something like the following based on:
 * Github commit history and tags
-** What release versions are there, what commits => changes done grouped by story, by whom, when
+  * What release versions are there, what commits => changes done grouped by story, by whom, when
 * Rally
-** What were the related stories and features - links to these
+  * What were the related stories and features - links to these
 * Jenkins
-** When was it built - link to release build
+  * When was it built - link to release build
 
 How to get:
 * checkmark link - from jenkins output?
