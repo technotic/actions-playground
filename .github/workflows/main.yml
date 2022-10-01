@@ -7,27 +7,27 @@ on:
 # on: workflow_dispatch
     
 jobs:
+
   generate-release-docs:
     name: Generate the release docs
     runs-on: ubuntu-latest
-
     steps:
       - name: Find the release just created
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
           echo Generate release docs for ${{ github.event.release.tag_name }}
-          
+
   logLatestRelease:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: octokit/request-action@v2.x
-        id: get_latest_release
-        with:
-          route: GET /repos/technotic/actions-playground/releases/latest
-          owner: octokit
-          repo: request-action
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo latest release: ${{ steps.get_latest_release.outputs.data }}"        
+      runs-on: ubuntu-latest
+      steps:
+        - uses: octokit/request-action@v2.x
+          id: get_latest_release
+          with:
+            route: GET /repos/{owner}/{repo}/releases/latest
+            owner: octokit
+            repo: request-action
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - run: "echo latest release: ${{ steps.get_latest_release.outputs.data }}"
 
