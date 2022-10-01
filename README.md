@@ -29,7 +29,7 @@ since 5.8.0
 
 | Feature | Story    | Details                 |
 ----------|----------|-------------------------|
-| F108100 | US100001 | This did something.     |
+| [F108100](http://rally1.reallydev.com) | [US100001](http://rally1.reallydev.com) | This did something.     |
 |         | US100002 | This did something else |
 |         | US100002 | This did something else |
 | F108101 | US100003 | This did something      |
@@ -74,6 +74,14 @@ prod: 01/01/2022 17:15
 |         | US100002 | This did something else |
 | F108101 | US100003 | This did something      |
 
+* Links:
+  [github](http://www.somewhere.com),
+  [checkmarx](http://www.somewhere.com),
+  [sonar](http://www.somewhere.com),
+  [test reports](http://www.somewhere.com),
+  [CR](http://www.somewhere.com),
+  [artifact](http://www.somewhere.com)
+
 ### 5.7.5
 prod: 01/03/2022 13:15
 
@@ -83,3 +91,11 @@ prod: 01/03/2022 13:15
 |         | US100002 | This did something else |
 |         | US100002 | This did something else |
 | F108101 | US100003 | This did something      |
+
+* Links:
+  [github](http://www.somewhere.com),
+  [checkmarx](http://www.somewhere.com),
+  [sonar](http://www.somewhere.com),
+  [test reports](http://www.somewhere.com),
+  [CR](http://www.somewhere.com),
+  [artifact](http://www.somewhere.com)
