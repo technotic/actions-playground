@@ -20,14 +20,9 @@ jobs:
         uses: DeLaGuardo/setup-clojure@9.5
         with:
           bb: latest
-#           bb: 0.8.2                    # Babashka
-          
+
       - name: Simple test
         run: |
           pwd
           ls -l
-          find .
-          find ..
-          find ../..
-          find ../../..
-#          bb -f ../bb/tester.clj
+          bb -f ./bb/tester.clj
