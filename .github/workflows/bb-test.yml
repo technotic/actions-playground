@@ -25,4 +25,5 @@ jobs:
       - name: Simple test
         run: |
           bb -e '(.getAbsolutePath (clojure.java.io/file "."))'
-          bb -f ../bb/tester.clj
+          bb -e '(map #(.getName %) (file-seq (clojure.java.io/file ".")))'
+#          bb -f ../bb/tester.clj
