@@ -6,6 +6,8 @@ The end goal is to generate something like the following based on:
 * Rally
 * Jenkins
 
+Can we include this in the release tag?
+
 ---
 
 # application-name
