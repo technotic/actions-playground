@@ -29,5 +29,7 @@ jobs:
             repo: request-action
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - run: "echo latest release: ${{ steps.get_latest_release.outputs.data }}"
+        - run: |
+            echo "Doing it here"
+            echo latest release: ${{ steps.get_latest_release.outputs.data }}
 
