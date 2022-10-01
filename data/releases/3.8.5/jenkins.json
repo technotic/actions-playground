@@ -1,0 +1,9 @@
+{
+  "build": {
+    "id": 101,
+    "when": "2022-01-01 10:00",
+    "who": "xxx",
+    "checkmarx": "xxx",
+    "sonar": "xxx"
+  }
+}

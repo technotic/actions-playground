@@ -5,6 +5,11 @@
     * Who made the commit (> 1?)
     * When
 
+Ideas:
+* Generate MD into the doc folder?
+* Have one repo that handles all other repos
+  * How to trigger? Have a callback from each repo when release created? see repository-dispatch
+
 ```json
 [
   {

@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the local repo
-      - name: Checkout
+      - name: Checkout project repo
         uses: actions/checkout@v3
 
       - name: Prepare java
@@ -26,8 +25,11 @@ jobs:
           bb: latest
 
       - name: Simple test
+        env:
+          BB_SRC=./bb/src/main
         run: |
-          bb -f ./bb/tester.clj
+          bb -f $BB_SRC/tester.clj
           # TODO
           # generate release json
           # regenerate all pages
+          # need to boot strap pages from historical tags (won't have all details any more from Jenkins etc)

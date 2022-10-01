@@ -1,0 +1,17 @@
+{
+  "stories": [
+    {
+      "id": "US1001001",
+      "featureId": "F1001",
+      "name": "A nice story",
+      "owner": "Fred"
+    }
+  ],
+  "features": [
+    {
+      "id": "F1001",
+      "name": "A nice feature",
+      "owner": "Jane"
+    }
+  ]
+}
