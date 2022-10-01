@@ -31,4 +31,6 @@ jobs:
           echo payload ${{ github.event.payload.release_id }}
           echo "----"
           echo type ${{ github.event.type }}
+          echo "----"
+          echo type ${{ github.event.release.type }}
 
