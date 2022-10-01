@@ -1,4 +1,4 @@
-name: Regenerate
+name: Regenerate release docs
 
 on:
   release:
