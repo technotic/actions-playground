@@ -19,4 +19,6 @@ jobs:
           echo tag ${{ github.event.release.tag }}
           echo name ${{ github.event.release.name }}
           echo author ${{ github.event.release.author }}
+          echo author.name ${{ github.event.release.author.name }}
+          echo author.login ${{ github.event.release.author.login }}
           echo isLatest ${{ github.event.release.isLatest }}
