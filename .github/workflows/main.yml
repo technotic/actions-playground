@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: Find the release just created
-        run: echo Regenerating release docs for TBD
+        run: echo Regenerating release docs for ${{ github.event.release.release_id }}
