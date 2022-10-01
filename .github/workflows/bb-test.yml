@@ -18,6 +18,8 @@ jobs:
 
       - name: Install clojure tools
         uses: DeLaGuardo/setup-clojure@9.5
+        with:
+          bb: v0.10.163
         
       - name: Simple test
         run: bb '(+ 1 1)'
