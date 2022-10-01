@@ -23,4 +23,6 @@ jobs:
 #           bb: 0.8.2                    # Babashka
           
       - name: Simple test
-        run: bb -f bb/tester.clj
+        run: |
+          bb -e '(.getAbsolutePath (clojure.java.io/file "."))'
+          bb -f ../bb/tester.clj
